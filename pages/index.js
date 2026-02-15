@@ -6,4 +6,6 @@ async function status(request, response) {
   response.status(200).json({ chave: "são acima da média" });
 }
 
-export default status; //define essa função de retorno como a principal para retornar o website
+export default status;
+
+//define essa função de retorno como a principal para retornar o website
