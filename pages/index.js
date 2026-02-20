@@ -1,11 +1,5 @@
-import database from "infra/database.js";
-
-async function status(request, response) {
-  const result = await database.query("SELECT 1 + 1 as sum;");
-  console.log(result.rows);
-  response.status(200).json({ chave: "são acima da média" });
+function Home() {
+  return <h1>são acima da média</h1>;
 }
 
-export default status;
-
-//define essa função de retorno como a principal para retornar o website
+export default Home;
