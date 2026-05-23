@@ -1,6 +1,7 @@
 services:
   database:
-    image: "postgres:16-alpine" #determina de onde será gerado a imagem
+    container_name: "postgres-dev"
+    image: "postgres:16-alpine"
     env_file:
       - ../.env.development
     ports:
