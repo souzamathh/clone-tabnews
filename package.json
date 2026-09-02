@@ -8,6 +8,7 @@
     "services:up": "docker compose -f infra/compose.yaml up -d",
     "services:stop": "docker compose -f infra/compose.yaml stop",
     "services:down": "docker compose -f infra/compose.yaml down",
+    "vercel-build": "npm run prepare && next build",
     "lint:prettier:check": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
     "lint:eslint:check": "eslint .",
@@ -42,5 +43,10 @@
     "prettier": "^3.6.2",
     "typescript": "^5.9.3",
     "undici": "^7.16.0"
+  },
+  "overrides": {
+    "eslint-plugin-jest": {
+      "@typescript-eslint/eslint-plugin": "$@typescript-eslint/eslint-plugin"
+    }
   }
 }
