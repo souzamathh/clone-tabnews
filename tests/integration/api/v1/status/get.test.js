@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import database from "infra/database.js";
 import orchestrator from "tests/orchestrator.js";
 
