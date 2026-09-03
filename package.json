@@ -32,12 +32,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@eslint/eslintrc": "^3.3.7",
-=======
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
->>>>>>> e23b296 (add `commitlint`with `Conventional Commits`config)
     "baseline-browser-mapping": "^2.9.19",
     "concurrently": "^8.2.2",
     "eslint": "^9.39.5",
