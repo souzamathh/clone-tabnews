@@ -54,5 +54,11 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "overrides": {
+    "yargs": {
+      "string-width": "5.1.2"
+    },
+    "string-width": "5.1.2"
   }
 }
