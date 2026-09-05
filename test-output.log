@@ -1,0 +1,21 @@
+
+> clone-tabnews@1.0.0 test
+> npm run services:up && npm run wait-for-postgres && concurrently -n next,jest --hide next -k -s command-jest 'next dev' 'jest --runInBand'
+
+
+> clone-tabnews@1.0.0 services:up
+> docker compose -f infra/compose.yaml up -d
+
+ Container postgres-dev  Running
+
+> clone-tabnews@1.0.0 wait-for-postgres
+> node infra/script/wait-for-postgres.js
+
+
+
+🔴 Aguardando Postgres aceitar conexões
+🟢 Postgres está pronto e aceitando conexões.
+
+[jest] [AsyncFunction (anonymous)]
+--> Sending SIGTERM to other processes..
+[jest] jest --runInBand exited with code SIGTERM
