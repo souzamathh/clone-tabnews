@@ -32,7 +32,7 @@ async function status(request, response) {
         opened_connections: databaseOpenedConnectionsValue,
       },
     },
-  }); //200 representa que está tudo OK
+  });
 }
 
 export default status;
