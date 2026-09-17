@@ -11,6 +11,7 @@ const createJestConfig = nextJest({
 const jestConfig = createJestConfig({
   moduleDirectories: ["node_modules", "<rootDir>"],
   testTimeout: 60000,
+  transformIgnorePatterns: ["/node_modules/(?!(node-pg-migrate)/)"],
 });
 console.log(jestConfig);
 
