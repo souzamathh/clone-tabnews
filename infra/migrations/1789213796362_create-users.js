@@ -26,22 +26,14 @@ export const up = (pgm) => {
 
     created_at: {
       type: "timestamptz",
-<<<<<<< Updated upstream
       notNull: true,
       default: pgm.func("timezone('utc', now ())"),
-=======
-      default: pgm.func("now()"),
->>>>>>> Stashed changes
     },
 
     updated_at: {
       type: "timestamptz",
-<<<<<<< Updated upstream
       notNull: true,
       default: pgm.func("timezone('utc', now ())"),
-=======
-      default: pgm.func("now()"),
->>>>>>> Stashed changes
     },
   });
 };
