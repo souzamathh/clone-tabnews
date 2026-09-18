@@ -1,4 +1,4 @@
-export const up = (pgm) => {
+const up = (pgm) => {
   pgm.createTable("users", {
     id: {
       type: "uuid",
@@ -38,4 +38,7 @@ export const up = (pgm) => {
   });
 };
 
-export const down = false;
+const down = false;
+
+exports.up = up;
+exports.down = down;
