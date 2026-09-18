@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: undefined,
+  outputFileTracingIncludes: {
+    "/api/v1/migrations": ["./infra/migrations/**/*"],
+  },
+
   reactStrictMode: true,
   webpack: (config, { isServer }) => {
     if (!isServer) {

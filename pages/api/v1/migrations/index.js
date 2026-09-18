@@ -23,3 +23,7 @@ async function postHandler(request, response) {
 
   return response.status(200).json(migratedMigrations);
 }
+
+export const config = {
+  unstable_includeFiles: ["infra/migrations/**/*"],
+};
